@@ -1,0 +1,124 @@
+@import url("./reset.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"aside main main";
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+
+img.icon {
+	width: 2.4rem;
+	height: 2.4rem;
+}
+
+body header {
+	grid-area: header;
+	height: 6rem;
+	background-color: #fff;
+}
+
+header nav {
+	height: 100%;
+	padding: 0 3rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header ul#header-left {
+	display: flex;
+	align-items: center;
+	gap: 3.2rem;
+}
+
+header ul#header-left a img[src$="icon_yt_full.svg"] {
+	width: 10rem;
+}
+
+header ul#header-center form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header ul#header-center form input[type="search"] {
+	width: 48rem;
+	height: 4rem;
+
+	padding: 1rem;
+	font-size: 1.8rem;
+
+	border: 0.1rem solid #ccc;
+	border-radius: 2rem 0 0 2rem;
+}
+
+header ul#header-center form button {
+	width: 5.7rem;
+	height: 4rem;
+
+	border: 0.1rem solid #ccc;
+	border-radius: 0 2rem 2rem 0;
+	background: #f8f8f8;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header ul#header-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2.4rem;
+}
+
+body aside {
+	grid-area: aside;
+	width: calc(15vw - 2 * (2.4rem));
+	height: calc(100vh - 6rem - 2 * (2.4rem));
+	background-color: #fff;
+
+	display: flex;
+	flex-flow: column;
+	gap: 2.2rem;
+	padding: 2.4rem;
+}
+
+aside div.actions a {
+	display: flex;
+	justify-content: flex-start;
+	gap: 1.6rem;
+	align-items: center;
+
+	text-decoration: none;
+	color: #000;
+	font-size: 1.4rem;
+}
+
+aside div.actions a h3 {
+	font-weight: 400;
+}
+
+body main {
+	grid-area: main;
+	width: calc(100vw - 15vw);
+	height: calc(100vh - 6rem);
+	background-color: #f9f9f9;
+}
+
+a,
+button {
+	transition: opacity 0.1s;
+}
+
+a:hover,
+button:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
