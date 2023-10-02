@@ -24,3 +24,9 @@ aside div.actions a {
 aside div.actions a h3 {
 	font-weight: 400;
 }
+
+@media screen and (max-width: 1400px) {
+  body aside {
+		display: none;
+	}
+}

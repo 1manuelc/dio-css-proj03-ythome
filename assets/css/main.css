@@ -9,7 +9,7 @@ main .videos-container {
   width: calc(100vw - 15vw - 4rem);
 	height: calc(100vh - 6rem - 4rem);
   display: grid;
-  grid-template: repeat(4, 1fr) / repeat(4, 30rem);
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
 	gap: 6rem;
 	padding: 2rem;
 }
@@ -79,4 +79,18 @@ main .videos-container .video-box {
 
 .video-infos .video-infos-texts .video-infos-views-date {
   padding-top: .6rem;
+}
+
+@media screen and (max-width: 1400px) {
+  main .videos-container {
+    width: calc(100vw - 6rem);
+	  height: calc(100vh - 6rem);
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 6rem 2rem;
+    padding: 2rem;
+  }
+} @media screen and (max-width: 1000px) {
+  main .videos-container {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
 }
