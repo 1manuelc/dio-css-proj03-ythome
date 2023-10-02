@@ -1,0 +1,26 @@
+body aside {
+	grid-area: aside;
+	width: calc(15vw - 2 * (2.4rem));
+	height: calc(100vh - 6rem - 2 * (2.4rem));
+	background-color: #fff;
+
+	display: flex;
+	flex-flow: column;
+	gap: 2.2rem;
+	padding: 2.4rem;
+}
+
+aside div.actions a {
+	display: flex;
+	justify-content: flex-start;
+	gap: 1.6rem;
+	align-items: center;
+
+	text-decoration: none;
+	color: #000;
+	font-size: 1.4rem;
+}
+
+aside div.actions a h3 {
+	font-weight: 400;
+}
